@@ -22,5 +22,5 @@ Elegí la API para la cual vas a desarrollar el cliente en .NET Standard. Ingres
 - [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer)
 - [.NET Core y .NET CLI](https://www.microsoft.com/net/core)
 
-## Ejemplos
-  [Ver features VS](src/)
+## Hands on Labs
+  [Ejemplos](src/)
