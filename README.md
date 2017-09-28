@@ -3,7 +3,7 @@ One Library to Rule Them All
 
 ## Prerequisitos
 
-Laptop con Visual Studio 2017 y/o Visual Studio Code
+Laptop con Visual Studio 2017 o Visual Studio Code
 - Opcional tener instaladas características UWP, .NET Core y Xamarin (para probar .NET Standard en varios tipos de proyecto)
 - [Ver features VS](docs/Prerequisitos-VS-2017.png)
     
