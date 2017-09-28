@@ -23,4 +23,14 @@ Elegí la API para la cual vas a desarrollar el cliente en .NET Standard. Ingres
 - [.NET Core y .NET CLI](https://www.microsoft.com/net/core)
 
 ## Hands on Labs
-  [Ejemplos](src/)
+Lab I
+- [walkthrough](docs/lab-1.md)
+- [Código](src/lab-1)
+
+Lab II
+- [walkthrough](docs/lab-2.md)
+- [Código](src/lab-2)
+
+Lab III
+- [walkthrough](docs/lab-3.md)
+- [Código](src/lab-3)
