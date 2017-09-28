@@ -1,7 +1,8 @@
-# .NET Standard Workshop
-Hands on Lab I
+# .NET Standard Workshop - Hands on Lab I
+En este Lab repasamos los primeros pasos para trabajar con GitHub, una plataforma de desarrollo colaborativo 
+para alojar proyectos utilizando el sistema de control de versiones Git.
 
-## GitHub
+## Crear repositorios
 
 - Ingresar a [GitHub](https://github.com/) y crear una cuenta (o Sign in si ya tenían una)
 - Crear un fork de [netstandard-workshop](https://github.com/matiasdieguez/netstandard-workshop)
@@ -10,13 +11,12 @@ Hands on Lab I
 - Crear un nuevo repositorio
 - Seleccionar VisualStudio como template de .gitignore para omitir archivos no versionables
 - Seleccionar una licencia para generar el archivo LICENSE
-- Clonarlo tu repositorio localmente
+- Clonar tu repositorio localmente
 ```git clone https://github.com/YOUR-ACCOUNT/REPO-NAME```
 
 ## Agregar archivos, protegerlos y sincronizarlos
 
 - Agregar un archivo README.md para agregar una descripción del proyecto utilizando [Markdown](https://guides.github.com/features/mastering-markdown/) 
-- Agregar una carpeta "src"
 - Informar al repo de las adiciones
 ``` git add .```
 - Confirmar cambios

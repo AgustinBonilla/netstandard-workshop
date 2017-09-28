@@ -24,13 +24,13 @@ Elegí la API para la cual vas a desarrollar el cliente en .NET Standard. Ingres
 
 ## Hands on Labs
 Lab I
-- [walkthrough](docs/lab-1.md)
+- [Walkthrough](docs/lab-1.md)
 - [Código](src/lab-1)
 
 Lab II
-- [walkthrough](docs/lab-2.md)
+- [Walkthrough](docs/lab-2.md)
 - [Código](src/lab-2)
 
 Lab III
-- [walkthrough](docs/lab-3.md)
+- [Walkthrough](docs/lab-3.md)
 - [Código](src/lab-3)
