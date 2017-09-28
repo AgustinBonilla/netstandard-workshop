@@ -84,6 +84,7 @@ var obj = JsonConvert.DeserializeObject<MyEntity>(json);
 Desde Visual Studio
 - VS lo hace automáticamente en el build!
 - Podemos configurar la metadata desde las propiedades del proyecto
+
 Utilizando NuGet Package Explorer
 - Crear nuevo paquete
 - Editar metadatos
