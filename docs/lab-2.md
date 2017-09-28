@@ -49,7 +49,7 @@ namespace MyApi
         }
     }
 }
-```csharp
+```
 
 ## Agregar un paquete NuGet a nuestro proyecto
 - Desde Administar paquetes de NuGet para el proyecto...
