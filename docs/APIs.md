@@ -1,17 +1,19 @@
 # Listado de apis para crear clientes .NET Standard en el workshop
 
 ## 1
-- URL GET	https://api.ip2country.info/ip?{publicIp}
-- Ejemplo	https://api.ip2country.info/ip?8.8.4.4 
-
+```
+URL GET	https://api.ip2country.info/ip?{publicIp}
+ Ejemplo	https://api.ip2country.info/ip?8.8.4.4 
+```
 ## 2
-- URL	GET	https://pozzad-email-validator.p.mashape.com/emailvalidator/validateEmail/{emailAddress}
+```
+URL	GET	https://pozzad-email-validator.p.mashape.com/emailvalidator/validateEmail/{emailAddress}
 Headers
-- X-Mashape-Key	{apiKey} L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM
-- Accept		application/json
+ X-Mashape-Key	{apiKey} L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM
+ Accept		application/json
 Ejemplo	
-- GET	https://pozzad-email-validator.p.mashape.com/emailvalidator/validateEmail/fakemail521%40gmail.com
-
+ GET	https://pozzad-email-validator.p.mashape.com/emailvalidator/validateEmail/fakemail521%40gmail.com
+```
 ## 3
 URL	GET	https://currencyconverter.p.mashape.com/availablecurrencies
 URL	GET	https://currencyconverter.p.mashape.com/?from={fromCurrency}&from_amount=1&to={toCurrency}
