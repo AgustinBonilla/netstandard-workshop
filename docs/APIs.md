@@ -1,16 +1,18 @@
 # Datos de acceso de APIs
 
+Para las API hosteadas en mashape, pueden obtener la api key vinculando su cuenta GitHub con el portal.
+
 ## 1
 ```
 URL GET	https://api.ip2country.info/ip?{publicIp}
- Ejemplo	https://api.ip2country.info/ip?8.8.4.4 
+Ejemplo	https://api.ip2country.info/ip?8.8.4.4 
 ```
 ## 2
 ```
 URL	GET	https://pozzad-email-validator.p.mashape.com/emailvalidator/validateEmail/{emailAddress}
 Headers
- X-Mashape-Key	{apiKey} L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM
- Accept		application/json
+    X-Mashape-Key	{apiKey} 
+    Accept		application/json
 Ejemplo	
  GET	https://pozzad-email-validator.p.mashape.com/emailvalidator/validateEmail/fakemail521%40gmail.com
 ```
@@ -19,7 +21,7 @@ Ejemplo
 URL	GET	https://currencyconverter.p.mashape.com/availablecurrencies
 URL	GET	https://currencyconverter.p.mashape.com/?from={fromCurrency}&from_amount=1&to={toCurrency}
 Headers
-    X-Mashape-Key	{apiKey} L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM
+    X-Mashape-Key	{apiKey} 
     Accept		application/json
 Ejemplo	GET	https://currencyconverter.p.mashape.com/?from=USD&from_amount=1&to=EUR
 ```
@@ -28,7 +30,7 @@ Ejemplo	GET	https://currencyconverter.p.mashape.com/?from=USD&from_amount=1&to=E
 ```
 URL	GET	https://restcountries-v1.p.mashape.com/alpha/{countryCode}
 Headers
-    X-Mashape-Key	{apiKey} L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM
+    X-Mashape-Key	{apiKey} 
     Accept		application/json
 Ejemplo	GET	https://restcountries-v1.p.mashape.com/alpha/ar
 ```
@@ -36,7 +38,7 @@ Ejemplo	GET	https://restcountries-v1.p.mashape.com/alpha/ar
 ## 5
 ```
 URL	GET	https://duckduckgo-duckduckgo-zero-click-info.p.mashape.com/?format=json&no_html=1&no_redirect=1&q={query}&skip_disambig=1
-    X-Mashape-Key	{apiKey} L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM
+    X-Mashape-Key	{apiKey} 
     Accept		application/json
 Ejemplo	GET	https://duckduckgo-duckduckgo-zero-click-info.p.mashape.com/?format=json&no_html=1&no_redirect=1&q=lionel+messi&skip_disambig=1
 ```
@@ -45,7 +47,7 @@ Ejemplo	GET	https://duckduckgo-duckduckgo-zero-click-info.p.mashape.com/?format=
 ```
 URL	GET	https://tony11-blacklist-ip-v1.p.mashape.com/ipv4/{ip}
 Headers
-    X-Mashape-Key	{apiKey} L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM
+    X-Mashape-Key	{apiKey} 
     Accept		application/json
 Ejemplo	GET	https://tony11-blacklist-ip-v1.p.mashape.com/ipv4/8.8.4.4
 ```
@@ -54,7 +56,7 @@ Ejemplo	GET	https://tony11-blacklist-ip-v1.p.mashape.com/ipv4/8.8.4.4
 ```
 URL	GET	https://aplet123-wordnet-search-v1.p.mashape.com/master?word={word}
 Headers
-    X-Mashape-Key	{apiKey} L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM
+    X-Mashape-Key	{apiKey} 
     Accept		application/json
 Ejemplo	GET	https://aplet123-wordnet-search-v1.p.mashape.com/master?word=football
 ```
@@ -63,7 +65,7 @@ Ejemplo	GET	https://aplet123-wordnet-search-v1.p.mashape.com/master?word=footbal
 ```
 URL	GET	https://api.genderize.io/?name={name}
 Headers
-    X-Mashape-Key	{apiKey} L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM
+    X-Mashape-Key	{apiKey} 
     Accept		application/json
 Ejemplo	GET	https://api.genderize.io/?name=juan
 ```
@@ -72,16 +74,16 @@ Ejemplo	GET	https://api.genderize.io/?name=juan
 ```
 URL	GET	https://sun.p.mashape.com/api/sun/?city={cityName}
 Headers
-    X-Mashape-Key	{apiKey} L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM
+    X-Mashape-Key	{apiKey} 
     Accept		application/json
 Ejemplo	GET	https://sun.p.mashape.com/api/sun/?city=buenos+aires
 ```
 
-## 10	https://market.mashape.com/moocher-io/domain-reputation
+## 10	
 ```
 URL	GET	https://moocher-io-domain-reputation-v1.p.mashape.com/{domain}
 Headers
-    X-Mashape-Key	{apiKey} L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM
+    X-Mashape-Key	{apiKey} 
     Accept		application/json
     Content-Type	application/json
 Ejemplo	GET	https://moocher-io-domain-reputation-v1.p.mashape.com/facebook.com
