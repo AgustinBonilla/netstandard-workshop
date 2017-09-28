@@ -2,7 +2,7 @@
 En este Lab repasamos los primeros pasos para trabajar con GitHub, una plataforma de desarrollo colaborativo 
 para alojar proyectos utilizando el sistema de control de versiones Git.
 
-## Crear repositorios
+## 1 - Crear y clonar repositorios
 
 - Ingresar a [GitHub](https://github.com/) y realizar el Sign in o Sign up
 - Crear un fork de [netstandard-workshop](https://github.com/matiasdieguez/netstandard-workshop)
@@ -14,7 +14,7 @@ para alojar proyectos utilizando el sistema de control de versiones Git.
 - Clonar tu repositorio localmente
 ```git clone https://github.com/YOUR-ACCOUNT/REPO-NAME```
 
-## Agregar archivos, protegerlos y sincronizarlos
+## 2 - Agregar archivos, protegerlos y sincronizarlos
 
 - Agregar un archivo README.md para agregar una descripción del proyecto utilizando [Markdown](https://guides.github.com/features/mastering-markdown/) 
 - Informar al repo de las adiciones

@@ -1,14 +1,14 @@
 # .NET Standard Workshop - Hands on Lab II
-En este Lab utilizaremos el repo creado en el Lab I para hostear un proyecto de biblioteca .NET Standard 
+En este Lab utilizaremos el nuevo repo creado en el Lab I para hostear un proyecto de biblioteca .NET Standard 
 que implemente un cliente tipado para la API que cada coder elija.
 
-## Crear un proyecto .NET Standard
+## 1 - Crear un proyecto .NET Standard
 
-- Desde Visual Studio
-Nuevo proyecto -> Bibliotecac de Clases (.NET Standard)
+Desde Visual Studio
+- Nuevo proyecto -> Bibliotecac de Clases (.NET Standard)
 
-- Utilizando .NET CLI y Visual Studio Code
-Instalar extension C# para VS Code
+Utilizando .NET CLI y Visual Studio Code
+- Instalar extension C# para VS Code
 
 ``` 
 dotnet new classlib -f netstandard1.4
@@ -19,7 +19,7 @@ Abrir la carpeta actual en VS Code
 ``` 
 code .
 ```
-## Utilizar HttpClient para acceder a APIs REST
+## 2 - Utilizar HttpClient para acceder a APIs REST
 ```csharp
 using System;
 using System.Net.Http;
@@ -51,26 +51,44 @@ namespace MyApi
 }
 ```
 
-## Agregar un paquete NuGet a nuestro proyecto
-- Desde Administar paquetes de NuGet para el proyecto...
-Ingresar a esta opción desde el menu contextual del Solution Explorer y seleccionar el paquete
-- Desde el Package Administration Console
+## 3 - Agregar un paquete NuGet a nuestro proyecto
+Desde Administar paquetes de NuGet para el proyecto...
+- Ingresar a esta opción desde el menu contextual del Solution Explorer
+- Seleccionar el paquete
+Desde el Package Administration Console
 ``` 
 install-package newtonsoft.json
 ```
-- Desde .NET CLI
+Desde .NET CLI
 ``` 
 dotnet add package newtonsoft.json
 ```
 
-## Crear un paquete NuGet
+## 4 - Deseralizar json a clase .NET
+- Agregar using
+```csharp
+using Newtonsoft.Json;
+```
+Agregar clases para representar los datos tipados de la respuesta de la API
+- Podemos usar [json2csharp](http://json2csharp.com/) para generar automáticamente las clases de respuesta usando un json de muestra
+- Newtonsoft.Json tiene diversos mecanismos para controlar la deserialización, como JsonProperty
+```csharp
+[JsonProperty(PropertyName = "FooBar")]
+public string Foo { get; set; }
+```
+Deserializar utilizando JsonConvert
+- Deserializar
+```csharp
+var json = await response.Content.ReadAsStringAsync();
+var obj = JsonConvert.DeserializeObject<MyEntity>(json);
+```
 
-- Desde Visual Studio
-VS lo hace automáticamente en el build!
-Podemos configurar la metadata desde las propiedades del proyecto 
-- Utilizando NuGet Package Explorer
+## 5 - Crear un paquete NuGet
+Desde Visual Studio
+- VS lo hace automáticamente en el build!
+- Podemos configurar la metadata desde las propiedades del proyecto
+Utilizando NuGet Package Explorer
 
-
-## Publicar un paquete a nuget.org
+## 6 - Publicar un paquete a nuget.org
 - Crear una cuenta de usuario en [NuGet](https://nuget.org)
 - Realizar el upload del paquete
