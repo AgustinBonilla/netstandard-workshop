@@ -5,7 +5,7 @@ que implemente un cliente tipado para la API que cada coder elija.
 ## 1 - Crear un proyecto .NET Standard
 
 Desde Visual Studio
-- Nuevo proyecto -> Bibliotecac de Clases (.NET Standard)
+- Nuevo proyecto -> Biblioteca de Clases (.NET Standard)
 
 Utilizando .NET CLI y Visual Studio Code
 - Instalar extension C# para VS Code
