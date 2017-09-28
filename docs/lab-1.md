@@ -4,7 +4,7 @@ para alojar proyectos utilizando el sistema de control de versiones Git.
 
 ## Crear repositorios
 
-- Ingresar a [GitHub](https://github.com/) y crear una cuenta (o Sign in si ya tenían una)
+- Ingresar a [GitHub](https://github.com/) y realizar el Sign in o Sign up
 - Crear un fork de [netstandard-workshop](https://github.com/matiasdieguez/netstandard-workshop)
 - Clonarlo para descargar localmente el fork
 ```git clone https://github.com/YOUR-ACCOUNT/netstandard-workshop```

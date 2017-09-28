@@ -1,25 +1,76 @@
-# .NET Standard Workshop - Hands on Lab I
-En este Lab repasamos los primeros pasos para trabajar con GitHub, una plataforma de desarrollo colaborativo 
-para alojar proyectos utilizando el sistema de control de versiones Git.
+# .NET Standard Workshop - Hands on Lab II
+En este Lab utilizaremos el repo creado en el Lab I para hostear un proyecto de biblioteca .NET Standard 
+que implemente un cliente tipado para la API que cada coder elija.
 
-## Crear repositorios
+## Crear un proyecto .NET Standard
 
-- Ingresar a [GitHub](https://github.com/) y crear una cuenta (o Sign in si ya tenían una)
-- Crear un fork de [netstandard-workshop](https://github.com/matiasdieguez/netstandard-workshop)
-- Clonarlo para descargar localmente el fork
-```git clone https://github.com/YOUR-ACCOUNT/netstandard-workshop```
-- Crear un nuevo repositorio
-- Seleccionar VisualStudio como template de .gitignore para omitir archivos no versionables
-- Seleccionar una licencia para generar el archivo LICENSE
-- Clonar tu repositorio localmente
-```git clone https://github.com/YOUR-ACCOUNT/REPO-NAME```
+- Desde Visual Studio
+Nuevo proyecto -> Bibliotecac de Clases (.NET Standard)
 
-## Agregar archivos, protegerlos y sincronizarlos
+- Utilizando .NET CLI y Visual Studio Code
+Instalar extension C# para VS Code
 
-- Agregar un archivo README.md para agregar una descripción del proyecto utilizando [Markdown](https://guides.github.com/features/mastering-markdown/) 
-- Informar al repo de las adiciones
-``` git add .```
-- Confirmar cambios
-``` git commit -m "comentario" ```
-- Publicar cambios
-``` git push ```
+``` 
+dotnet new classlib -f netstandard1.4
+dotnet restore
+```
+
+Abrir la carpeta actual en VS Code
+``` 
+code .
+```
+## Utilizar HttpClient para acceder a APIs REST
+```csharp
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+namespace MyApi
+{
+    public class MyApiClient
+    {
+        public string ApiUrl {get; set;} = "http://my.api.url";
+        public string ApiKey {get; set;} = "MY-API-KEY";
+        public async Task<string> GetData()
+        {
+            var result = string.Empty;
+            
+            using(var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Add("Accept", "application/json");
+                
+                var response = await client.GetAsync(ApiUrl);
+                
+                if(response.IsSuccessStatusCode)
+                    result = await response.Content.ReadAsStringAsync();
+            }
+
+            return result;
+        }
+    }
+}
+```csharp
+
+## Agregar un paquete NuGet a nuestro proyecto
+- Desde Administar paquetes de NuGet para el proyecto...
+Ingresar a esta opción desde el menu contextual del Solution Explorer y seleccionar el paquete
+- Desde el Package Administration Console
+``` 
+install-package newtonsoft.json
+```
+- Desde .NET CLI
+``` 
+dotnet add package newtonsoft.json
+```
+
+## Crear un paquete NuGet
+
+- Desde Visual Studio
+VS lo hace automáticamente en el build!
+Podemos configurar la metadata desde las propiedades del proyecto 
+- Utilizando NuGet Package Explorer
+
+
+## Publicar un paquete a nuget.org
+- Crear una cuenta de usuario en [NuGet](https://nuget.org)
+- Realizar el upload del paquete
