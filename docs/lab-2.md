@@ -8,15 +8,11 @@ Desde Visual Studio
 - Nuevo proyecto -> Biblioteca de Clases (.NET Standard)
 
 Utilizando .NET CLI y Visual Studio Code
-- Instalar extension C# para VS Code
+- Instalar extensión C# para VS Code
 
 ``` 
 dotnet new classlib -f netstandard1.4
 dotnet restore
-```
-
-Abrir la carpeta actual en VS Code
-``` 
 code .
 ```
 ## 2 - Utilizar HttpClient para acceder a APIs REST
@@ -62,6 +58,7 @@ install-package newtonsoft.json
 Desde .NET CLI
 ``` 
 dotnet add package newtonsoft.json
+dotnet restore
 ```
 
 ## 4 - Deseralizar json a clase .NET
@@ -88,6 +85,11 @@ Desde Visual Studio
 - VS lo hace automáticamente en el build!
 - Podemos configurar la metadata desde las propiedades del proyecto
 Utilizando NuGet Package Explorer
+- Crear nuevo paquete
+- Editar metadatos
+- Agregar dependencia a NETStandard.Library y Newtonsoft.Json
+- Agregar contenido /lib/netstanard1.4
+- Export
 
 ## 6 - Publicar un paquete a nuget.org
 - Crear una cuenta de usuario en [NuGet](https://nuget.org)
