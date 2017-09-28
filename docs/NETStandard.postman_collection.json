@@ -1,0 +1,837 @@
+{
+	"variables": [],
+	"info": {
+		"name": ".NET Standard",
+		"_postman_id": "8b609a0a-4b43-8a25-32d0-fb10161b6268",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01-ip2country",
+			"request": {
+				"url": {
+					"raw": "https://api.ip2country.info/ip?8.8.4.4=",
+					"protocol": "https",
+					"host": [
+						"api",
+						"ip2country",
+						"info"
+					],
+					"path": [
+						"ip"
+					],
+					"query": [
+						{
+							"key": "8.8.4.4",
+							"value": "",
+							"equals": false,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://api.ip2country.info/ip?8.8.4.4"
+			},
+			"response": []
+		},
+		{
+			"name": "02-email-validator",
+			"request": {
+				"url": "https://pozzad-email-validator.p.mashape.com/emailvalidator/validateEmail/matiasdieguez521@gmail.com",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Mashape-Key",
+						"value": "L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://pozzad-email-validator.p.mashape.com/emailvalidator/validateEmail/fakemail521%40gmail.com"
+			},
+			"response": []
+		},
+		{
+			"name": "03-currency-converter",
+			"request": {
+				"url": {
+					"raw": "https://currencyconverter.p.mashape.com/?from=USD&from_amount=1&to=EUR",
+					"protocol": "https",
+					"host": [
+						"currencyconverter",
+						"p",
+						"mashape",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "USD",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "from_amount",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "to",
+							"value": "EUR",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Mashape-Key",
+						"value": "L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://pozzad-email-validator.p.mashape.com/emailvalidator/validateEmail/fakemail521%40gmail.com"
+			},
+			"response": []
+		},
+		{
+			"name": "04-rest-countries",
+			"request": {
+				"url": "https://restcountries-v1.p.mashape.com/alpha/ar",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Mashape-Key",
+						"value": "L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://restcountries-v1.p.mashape.com/alpha/ar"
+			},
+			"response": []
+		},
+		{
+			"name": "05-duckduckgo-search",
+			"request": {
+				"url": {
+					"raw": "https://duckduckgo-duckduckgo-zero-click-info.p.mashape.com/?format=json&no_html=1&no_redirect=1&q=lionel+messi&skip_disambig=1",
+					"protocol": "https",
+					"host": [
+						"duckduckgo-duckduckgo-zero-click-info",
+						"p",
+						"mashape",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "no_html",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "no_redirect",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "q",
+							"value": "lionel+messi",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "skip_disambig",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Mashape-Key",
+						"value": "L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://duckduckgo-duckduckgo-zero-click-info.p.mashape.com/?format=json&no_html=1&no_redirect=1&q={query}&skip_disambig=1"
+			},
+			"response": []
+		},
+		{
+			"name": "06-ip-blacklist",
+			"request": {
+				"url": "https://tony11-blacklist-ip-v1.p.mashape.com/ipv4/8.8.4.4",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Mashape-Key",
+						"value": "L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://tony11-blacklist-ip-v1.p.mashape.com/ipv4/8.8.4.4"
+			},
+			"response": []
+		},
+		{
+			"name": "07-word-definition",
+			"request": {
+				"url": {
+					"raw": "https://aplet123-wordnet-search-v1.p.mashape.com/master?word=football",
+					"protocol": "https",
+					"host": [
+						"aplet123-wordnet-search-v1",
+						"p",
+						"mashape",
+						"com"
+					],
+					"path": [
+						"master"
+					],
+					"query": [
+						{
+							"key": "word",
+							"value": "football",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Mashape-Key",
+						"value": "L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://aplet123-wordnet-search-v1.p.mashape.com/master?word=football"
+			},
+			"response": []
+		},
+		{
+			"name": "08-genderize-names",
+			"request": {
+				"url": {
+					"raw": "https://api.genderize.io/?name=juan",
+					"protocol": "https",
+					"host": [
+						"api",
+						"genderize",
+						"io"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "juan",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://api.genderize.io/?name=juan"
+			},
+			"response": []
+		},
+		{
+			"name": "09-city-sunset",
+			"request": {
+				"url": {
+					"raw": "https://sun.p.mashape.com/api/sun/?city=buenos+aires",
+					"protocol": "https",
+					"host": [
+						"sun",
+						"p",
+						"mashape",
+						"com"
+					],
+					"path": [
+						"api",
+						"sun",
+						""
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "buenos+aires",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Mashape-Key",
+						"value": "L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://sun.p.mashape.com/api/sun/?city=buenos+aires"
+			},
+			"response": []
+		},
+		{
+			"name": "10-domain-info",
+			"request": {
+				"url": "https://moocher-io-domain-reputation-v1.p.mashape.com/facebook.com",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Mashape-Key",
+						"value": "L4YbUgwfoRmshRLQsNeoNaL5A06mp1TPGUhjsnCyygB6ISsmUM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://moocher-io-domain-reputation-v1.p.mashape.com/facebook.com"
+			},
+			"response": []
+		},
+		{
+			"name": "11-openlibrary-books",
+			"request": {
+				"url": {
+					"raw": "https://openlibrary.org/api/books?bibkeys=ISBN:9780131101630&jscmd=data&format=json",
+					"protocol": "https",
+					"host": [
+						"openlibrary",
+						"org"
+					],
+					"path": [
+						"api",
+						"books"
+					],
+					"query": [
+						{
+							"key": "bibkeys",
+							"value": "ISBN:9780131101630",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "jscmd",
+							"value": "data",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "format",
+							"value": "json",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://openlibrary.org/api/books?bibkeys=ISBN:0201558025&jscmd=data&format=json"
+			},
+			"response": []
+		},
+		{
+			"name": "12-iextrading-stocks",
+			"request": {
+				"url": "https://api.iextrading.com/1.0/stock/msft/quote",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://api.iextrading.com/1.0/stock/msft/quote"
+			},
+			"response": []
+		},
+		{
+			"name": "13-on-water",
+			"request": {
+				"url": "https://api.onwater.io/api/v1/results/23.92323,-66.3",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://api.onwater.io/api/v1/results/23.92323,-66.3"
+			},
+			"response": []
+		},
+		{
+			"name": "14-bands-in-town",
+			"request": {
+				"url": {
+					"raw": "https://rest.bandsintown.com/artists/divididos/events?app_id=myapp",
+					"protocol": "https",
+					"host": [
+						"rest",
+						"bandsintown",
+						"com"
+					],
+					"path": [
+						"artists",
+						"divididos",
+						"events"
+					],
+					"query": [
+						{
+							"key": "app_id",
+							"value": "myapp",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://rest.bandsintown.com/artists/rolling%20stones/events?app_id=myapp"
+			},
+			"response": []
+		},
+		{
+			"name": "15-lyrics",
+			"request": {
+				"url": "https://api.lyrics.ovh/v1/TheRollingStones/Satisfaction",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://api.lyrics.ovh/v1/TheRollingStones/Satisfaction"
+			},
+			"response": []
+		},
+		{
+			"name": "16-fonoapi",
+			"request": {
+				"url": {
+					"raw": "https://fonoapi.freshpixl.com/v1/getdevice?device=lumia%20850&token=75d5f68c0bae7032c2d6191f7c13f1d65685e47571cbf434",
+					"protocol": "https",
+					"host": [
+						"fonoapi",
+						"freshpixl",
+						"com"
+					],
+					"path": [
+						"v1",
+						"getdevice"
+					],
+					"query": [
+						{
+							"key": "device",
+							"value": "lumia%20850",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "token",
+							"value": "75d5f68c0bae7032c2d6191f7c13f1d65685e47571cbf434",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://api.lyrics.ovh/v1/TheRollingStones/Satisfaction"
+			},
+			"response": []
+		},
+		{
+			"name": "17-earthquakes",
+			"request": {
+				"url": {
+					"raw": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2017-09-19&endtime=2017-09-20&minmagnitude=6",
+					"protocol": "https",
+					"host": [
+						"earthquake",
+						"usgs",
+						"gov"
+					],
+					"path": [
+						"fdsnws",
+						"event",
+						"1",
+						"query"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "geojson",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "starttime",
+							"value": "2017-09-19",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "endtime",
+							"value": "2017-09-20",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "minmagnitude",
+							"value": "6",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://api.lyrics.ovh/v1/TheRollingStones/Satisfaction"
+			},
+			"response": []
+		},
+		{
+			"name": "18-city-bikes-networks",
+			"request": {
+				"url": "http://api.citybik.es/v2/networks",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "http://api.citybik.es/v2/networks"
+			},
+			"response": []
+		},
+		{
+			"name": "18-city-bikes-by-id",
+			"request": {
+				"url": "http://api.citybik.es/v2/networks/ecobici-buenos-aires",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "http://api.citybik.es/v2/networks/ecobici-buenos-aires"
+			},
+			"response": []
+		},
+		{
+			"name": "19-an-api-of-ice-and-fire",
+			"request": {
+				"url": "https://anapioficeandfire.com/api/characters/583",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://anapioficeandfire.com/api/characters/583"
+			},
+			"response": []
+		},
+		{
+			"name": "19-an-api-of-ice-and-fire-houses",
+			"request": {
+				"url": "https://anapioficeandfire.com/api/houses/378",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://anapioficeandfire.com/api/characters/583"
+			},
+			"response": []
+		},
+		{
+			"name": "20-metaweather",
+			"request": {
+				"url": "https://www.metaweather.com/api/location/468739",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://www.metaweather.com/api/location/468739"
+			},
+			"response": []
+		},
+		{
+			"name": "20-metaweather-search-city",
+			"request": {
+				"url": "http://ipinfo.io/8.8.4.4",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "https://www.metaweather.com/api/location/search/?query=buenos+aires"
+			},
+			"response": []
+		},
+		{
+			"name": "21-ip-info",
+			"request": {
+				"url": "http://ipinfo.io/8.8.4.4",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "http://ipinfo.io/8.8.4.4"
+			},
+			"response": []
+		},
+		{
+			"name": "22-banco-central-uruguay-cotizacion",
+			"request": {
+				"url": {
+					"raw": "http://webservice.solcre.com/cotizacion?backdoor=letmein",
+					"protocol": "http",
+					"host": [
+						"webservice",
+						"solcre",
+						"com"
+					],
+					"path": [
+						"cotizacion"
+					],
+					"query": [
+						{
+							"key": "backdoor",
+							"value": "letmein",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "http://webservice.solcre.com/cotizacion?backdoor=letmein"
+			},
+			"response": []
+		},
+		{
+			"name": "23-football-data-competitions",
+			"request": {
+				"url": "http://www.football-data.org/v1/competitions",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "http://www.football-data.org/v1/competitions"
+			},
+			"response": []
+		},
+		{
+			"name": "23-football-data-league-table",
+			"request": {
+				"url": "http://www.football-data.org/v1/competitions/445/leagueTable",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "http://www.football-data.org/v1/competitions/445/leagueTable"
+			},
+			"response": []
+		},
+		{
+			"name": "24-google-geocode",
+			"request": {
+				"url": {
+					"raw": "https://maps.googleapis.com/maps/api/geocode/json?address=Oxford%20University,%20uk&sensor=false",
+					"protocol": "https",
+					"host": [
+						"maps",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"maps",
+						"api",
+						"geocode",
+						"json"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "Oxford%20University,%20uk",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sensor",
+							"value": "false",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "https://maps.googleapis.com/maps/api/geocode/json?address=Oxford%20University,%20uk&sensor=false"
+			},
+			"response": []
+		}
+	]
+}

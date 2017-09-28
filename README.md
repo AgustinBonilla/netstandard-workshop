@@ -14,6 +14,8 @@ GitHub Extension for Visual Studio
 ## Lista de APIs
 Elegí la API para la cual vas a desarrollar el cliente en .NET Standard. Ingresá en el excel la URL de tu repositorio GitHub que creaste para tu proyecto .NET Standard
 - [Listado APIs](https://1drv.ms/x/s!At67yfddFzMeiEUm_8qrqtv49C4c)  
+- [Endpoints APIs](docs/APIs.md)  
+- [Colección APIs en Postman](docs/NETStandard.postman_collection.json)  
     
 ## Recursos
 - [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
@@ -24,13 +26,12 @@ Elegí la API para la cual vas a desarrollar el cliente en .NET Standard. Ingres
 
 ## Hands on Labs
 Lab I
-- [Walkthrough](docs/lab-1.md)
+- [Tutorial](docs/lab-1.md)
 - [Código](src/lab-1)
 
 Lab II
-- [Walkthrough](docs/lab-2.md)
+- [Tutorial](docs/lab-2.md)
 - [Código](src/lab-2)
 
 Lab III
-- [Walkthrough](docs/lab-3.md)
-- [Código](src/lab-3)
+- [Tutorial](docs/lab-3.md)

@@ -47,6 +47,9 @@ namespace MyApi
 }
 ```
 
+- Según cada API, es necesario configurar ciertos Headers y Api Keys
+- Luego sería ideal agregar validaciones de parámetros y control de respuestas
+
 ## 3 - Agregar un paquete NuGet a nuestro proyecto
 Desde Administar paquetes de NuGet para el proyecto...
 - Ingresar a esta opción desde el menu contextual del Solution Explorer

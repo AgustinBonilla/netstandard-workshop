@@ -1,25 +1,35 @@
-# .NET Standard Workshop - Hands on Lab I
-En este Lab repasamos los primeros pasos para trabajar con GitHub, una plataforma de desarrollo colaborativo 
-para alojar proyectos utilizando el sistema de control de versiones Git.
+# .NET Standard Workshop - Hands on Lab III
+En este Lab crearemos proyectos en distintas plataformas .NET para implementar nuestros paquetes .NET Standard.
 
-## Crear repositorios
+## 1 - NET Core Console App
 
-- Ingresar a [GitHub](https://github.com/) y crear una cuenta (o Sign in si ya tenían una)
-- Crear un fork de [netstandard-workshop](https://github.com/matiasdieguez/netstandard-workshop)
-- Clonarlo para descargar localmente el fork
-```git clone https://github.com/YOUR-ACCOUNT/netstandard-workshop```
-- Crear un nuevo repositorio
-- Seleccionar VisualStudio como template de .gitignore para omitir archivos no versionables
-- Seleccionar una licencia para generar el archivo LICENSE
-- Clonar tu repositorio localmente
-```git clone https://github.com/YOUR-ACCOUNT/REPO-NAME```
+Desde Visual Studio
+- Nuevo proyecto -> Aplicación de Consola (.NET Core)
 
-## Agregar archivos, protegerlos y sincronizarlos
+Utilizando .NET CLI y Visual Studio Code
+``` 
+dotnet new console
+dotnet restore
+code .
+dotnet build
+dotnet run
+```
 
-- Agregar un archivo README.md para agregar una descripción del proyecto utilizando [Markdown](https://guides.github.com/features/mastering-markdown/) 
-- Informar al repo de las adiciones
-``` git add .```
-- Confirmar cambios
-``` git commit -m "comentario" ```
-- Publicar cambios
-``` git push ```
+## 2 - ASP.NET Core MVC 
+
+Desde Visual Studio
+- Nuevo proyecto -> Aplicación web ASP.NET Core
+
+Utilizando .NET CLI y Visual Studio Code
+``` 
+dotnet new mvc
+dotnet restore
+code .
+dotnet build
+dotnet run
+```
+
+## 3 - Android, iOS y UWP
+
+Desde Visual Studio
+- Nuevo proyecto -> Cross Platform App (Xamarin)
