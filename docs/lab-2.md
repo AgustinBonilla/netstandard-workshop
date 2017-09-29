@@ -54,6 +54,7 @@ namespace MyApi
 Desde Administar paquetes de NuGet para el proyecto...
 - Ingresar a esta opción desde el menu contextual del Solution Explorer
 - Seleccionar el paquete
+
 Desde el Package Administration Console
 ``` 
 install-package newtonsoft.json

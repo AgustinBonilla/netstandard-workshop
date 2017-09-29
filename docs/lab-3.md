@@ -8,20 +8,13 @@ Crear una carpeta Samples en su repo GitHub
 Desde Visual Studio
 - Nuevo proyecto -> Aplicación de Consola (.NET Core)
 - Nuevo proyecto -> Aplicacion web ASP.NET Core
+- Confirmar cambios
+- Sincronizar
 
 Utilizando .NET CLI y Visual Studio Code
-- Console App
+
 ``` 
 dotnet new console
-``` 
-
-- ASP.NET Core MVC
-``` 
-dotnet new mvc
-``` 
-
-- Agregado de paquetes, codeo, build y push
-``` 
 dotnet add package yourpackage
 dotnet restore
 code .
