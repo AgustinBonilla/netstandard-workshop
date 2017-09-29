@@ -35,6 +35,7 @@ git push
 ## 2 - Crear Workspace Ubuntu en cloud9
 Ingresar a [cloud9](https://c9.io) y crear una cuenta
 - Seleccionar Template Blank (Logo de Ubuntu)
+- Agegar espacio en el disco del Workspace (llevarlo a 3 GB)
 - Clonar su repositorio
 
 Instalar .NET Core en Ubuntu
