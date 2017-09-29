@@ -23,3 +23,7 @@ para alojar proyectos utilizando el sistema de control de versiones Git.
 ``` git commit -m "comentario" ```
 - Publicar cambios
 ``` git push ```
+
+## 3 - Realizar requests hacia las APIs
+- Si tienen instalado Postman importar [Colección APIs en Postman](docs/resources/NETStandard.postman_collection.json)  
+- Realizar requests desde Postman para probarlas

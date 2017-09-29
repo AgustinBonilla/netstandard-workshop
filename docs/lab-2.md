@@ -11,7 +11,7 @@ Utilizando .NET CLI y Visual Studio Code
 - Instalar extensión C# para VS Code
 
 ``` 
-dotnet new classlib -f netstandard1.4
+dotnet new classlib -f netstandard2.0
 dotnet restore
 code .
 ```
