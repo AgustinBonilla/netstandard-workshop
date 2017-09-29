@@ -17,6 +17,7 @@ para alojar proyectos utilizando el sistema de control de versiones Git.
 ## 2 - Agregar archivos, protegerlos y sincronizarlos
 
 - Agregar un archivo README.md para escribir una descripción del proyecto utilizando [Markdown](https://guides.github.com/features/mastering-markdown/) 
+- Agregar una carpeta "lib" y una carpeta "test"
 - Informar al repo de las adiciones
 ``` git add .```
 - Confirmar cambios

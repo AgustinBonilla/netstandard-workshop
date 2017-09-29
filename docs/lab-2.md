@@ -3,7 +3,6 @@ En este Lab utilizaremos el nuevo repo creado en el Lab I para hostear un proyec
 que implemente un cliente tipado para la API que cada coder elija.
 
 ## 1 - Crear un proyecto .NET Standard
-
 Desde Visual Studio
 - Nuevo proyecto -> Biblioteca de Clases (.NET Standard)
 
@@ -11,7 +10,7 @@ Utilizando .NET CLI y Visual Studio Code
 - Instalar extensión C# para VS Code
 
 ``` 
-dotnet new classlib -f netstandard2.0
+dotnet new classlib 
 dotnet restore
 code .
 ```
@@ -26,7 +25,9 @@ namespace MyApi
     public class MyApiClient
     {
         public string ApiUrl {get; set;} = "http://my.api.url";
+        
         public string ApiKey {get; set;} = "MY-API-KEY";
+        
         public async Task<string> GetData()
         {
             var result = string.Empty;
@@ -83,19 +84,45 @@ Deserializar utilizando JsonConvert
 var json = await response.Content.ReadAsStringAsync();
 var obj = JsonConvert.DeserializeObject<MyEntity>(json);
 ```
+## 5 - Agregar un proyecto de test
+Moverse a la carpeta test y agregar un proyecto de MSTest
 
-## 5 - Crear un paquete NuGet
+Desde Visual Studio
+- Nuevo proyecto -> Biblioteca de Clases (.NET Standard)
+
+Utilizando .NET CLI y Visual Studio Code
+- Instalar extensión C# para VS Code
+
+``` 
+cd test
+dotnet new mstest 
+dotnet add reference ../lib/projectName.csproj
+dotnet restore
+code .
+dotnet build
+dotnet test
+```
+
+## 6 - Crear un paquete NuGet
 Desde Visual Studio
 - VS lo hace automáticamente en el build!
 - Podemos configurar la metadata desde las propiedades del proyecto
+
+Build Release desde VS
+- Configuration Manager (Release)
+
+Build Release desde VS Code
+```
+dotnet build -c release
+```
 
 Utilizando NuGet Package Explorer
 - Crear nuevo paquete
 - Editar metadatos
 - Agregar dependencia a NETStandard.Library y Newtonsoft.Json
-- Agregar contenido /lib/netstanard1.4
+- Agregar contenido /lib/netstanard2.0
 - Export
 
-## 6 - Publicar un paquete a nuget.org
+## 7 - Publicar un paquete a nuget.org
 - Crear una cuenta de usuario en [NuGet](https://nuget.org)
 - Realizar el upload del paquete

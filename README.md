@@ -6,6 +6,7 @@ One Library to Rule Them All
 Laptop con Visual Studio 2017 o Visual Studio Code
 - Opcional tener instaladas características UWP, .NET Core y Xamarin (para probar .NET Standard en varios tipos de proyecto)
 - [Ver features VS](docs/resources/Prerequisitos-VS-2017.png)
+- [.NET Core y .NET CLI](https://www.microsoft.com/net/core)
 
 GitHub 
 - [Git](https://git-scm.com/)
@@ -23,7 +24,6 @@ Elegí la API para la cual vas a desarrollar el cliente en .NET Standard. Ingres
 - [Postman](https://www.getpostman.com/)
 - [json2csharp](http://json2csharp.com/)
 - [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer)
-- [.NET Core y .NET CLI](https://www.microsoft.com/net/core)
 
 ## Hands on Labs
 Lab I
