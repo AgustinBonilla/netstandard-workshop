@@ -5,17 +5,17 @@ One Library to Rule Them All
 
 Laptop con Visual Studio 2017 o Visual Studio Code
 - Opcional tener instaladas características UWP, .NET Core y Xamarin (para probar .NET Standard en varios tipos de proyecto)
-- [Ver features VS](docs/Prerequisitos-VS-2017.png)
+- [Ver features VS](docs/resources/Prerequisitos-VS-2017.png)
     
 GitHub Extension for Visual Studio 
-- [Instalación via VS](docs/GitHub-Extension-VS.png)
+- [Instalación via VS](docs/resources/GitHub-Extension-VS.png)
 - [Instalación via download](https://visualstudio.github.com/)
 
 ## Lista de APIs
 Elegí la API para la cual vas a desarrollar el cliente en .NET Standard. Ingresá en el excel la URL de tu repositorio GitHub que creaste para tu proyecto .NET Standard
 - [Listado APIs](https://1drv.ms/x/s!At67yfddFzMeiEUm_8qrqtv49C4c)  
 - [Endpoints APIs](docs/APIs.md)  
-- [Colección APIs en Postman](docs/NETStandard.postman_collection.json)  
+- [Colección APIs en Postman](docs/resources/NETStandard.postman_collection.json)  
     
 ## Recursos
 - [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
