@@ -79,7 +79,7 @@ var obj = JsonConvert.DeserializeObject<MyEntity>(json);
 Moverse a la carpeta test y agregar un proyecto de MSTest
 
 Desde Visual Studio
-- Nuevo proyecto -> Proyecto de Prueba Unitaria
+- Nuevo proyecto -> Proyecto de Prueba Unitaria (.NET Core)
 - Agregar referencia al proyecto en ../lib
 
 Utilizando .NET CLI y Visual Studio Code

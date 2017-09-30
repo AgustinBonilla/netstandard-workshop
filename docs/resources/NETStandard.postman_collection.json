@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": ".NET Standard",
-		"_postman_id": "8b609a0a-4b43-8a25-32d0-fb10161b6268",
+		"_postman_id": "1ae0271e-f95d-436d-de06-632b9b7da102",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -694,7 +694,30 @@
 		{
 			"name": "20-metaweather-search-city",
 			"request": {
-				"url": "http://ipinfo.io/8.8.4.4",
+				"url": {
+					"raw": "https://www.metaweather.com/api/location/search/?query=buenos+aires",
+					"protocol": "https",
+					"host": [
+						"www",
+						"metaweather",
+						"com"
+					],
+					"path": [
+						"api",
+						"location",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "buenos+aires",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
 				"method": "GET",
 				"header": [
 					{
@@ -777,7 +800,10 @@
 				"url": "http://www.football-data.org/v1/competitions",
 				"method": "GET",
 				"header": [],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"description": "http://www.football-data.org/v1/competitions"
 			},
 			"response": []
@@ -788,7 +814,10 @@
 				"url": "http://www.football-data.org/v1/competitions/445/leagueTable",
 				"method": "GET",
 				"header": [],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"description": "http://www.football-data.org/v1/competitions/445/leagueTable"
 			},
 			"response": []
@@ -828,7 +857,10 @@
 				},
 				"method": "GET",
 				"header": [],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"description": "https://maps.googleapis.com/maps/api/geocode/json?address=Oxford%20University,%20uk&sensor=false"
 			},
 			"response": []

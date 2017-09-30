@@ -49,7 +49,6 @@ namespace NetFonoapi
     public class NetFonoapiClient
     {
         public string ApiUrl {get; set;} = "https://fonoapi.freshpixl.com/v1/getdevice?device={0}&token={1}";
-
         public string ApiKey {get; set;}
         public async Task<ApiResult[]> GetData(string device)
         {
