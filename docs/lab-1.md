@@ -10,6 +10,17 @@ para alojar proyectos utilizando el sistema de control de versiones Git.
 ```git clone https://github.com/YOUR-ACCOUNT/netstandard-workshop```
 - Crear un nuevo repositorio
 - Seleccionar VisualStudio como template de .gitignore para omitir archivos no versionables
+
+Si estan utilizando Visual Studio Code, agregar al final de .gitignore
+```
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+```
+
 - Seleccionar una licencia para generar el archivo LICENSE
 - Clonar tu repositorio localmente
 ```git clone https://github.com/YOUR-ACCOUNT/REPO-NAME```
