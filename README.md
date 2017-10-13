@@ -7,6 +7,7 @@ Laptop con Visual Studio 2017 o Visual Studio Code
 - Opcional tener instaladas características UWP, .NET Core y Xamarin (para probar .NET Standard en varios tipos de proyecto)
 - [Ver features VS](docs/resources/Prerequisitos-VS-2017.png)
 - [.NET Core y .NET CLI](https://www.microsoft.com/net/core)
+- C# Extension for VS Code
 
 GitHub 
 - [Git](https://git-scm.com/)
