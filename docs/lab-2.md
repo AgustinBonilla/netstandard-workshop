@@ -97,15 +97,15 @@ dotnet test
 
 ## 5 - Crear un paquete NuGet
 Desde Visual Studio
-- VS lo hace automáticamente en el build!
+- VS lo puede hacer automáticamente en el build
 - Podemos configurar la metadata desde las propiedades del proyecto
 
 Build Release desde VS
 - Configuration Manager (Release)
 
-Build Release desde VS Code
+Desde .NET CLI
 ```
-dotnet build -c release
+dotnet pack -c release
 ```
 
 Utilizando NuGet Package Explorer
@@ -115,6 +115,8 @@ Utilizando NuGet Package Explorer
 - Agregar dependencia a NETStandard.Library y Newtonsoft.Json
 - Agregar contenido /lib/netstanard2.0
 - Save
+
+
 
 ## 6 - Publicar un paquete a nuget.org
 - Crear una cuenta de usuario en [NuGet](https://nuget.org)
