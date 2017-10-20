@@ -36,3 +36,6 @@ Lab II
 
 Lab III
 - [Tutorial](docs/lab-3.md)
+
+Lab IV
+- [Tutorial](docs/lab-4.md)

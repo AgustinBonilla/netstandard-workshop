@@ -19,7 +19,7 @@ dotnet restore
 code .
 ```
 
-Renombrar .csproj, namespace y class para ajustarlo al proyecto (por default toma el nombre de la carpeta)
+Renombrar .csproj, namespace y class para ajustarlo al proyecto (por default toma el nombre de la carpeta). También pueden utilizar el parámetro -n "name"  -o . (y nombre y salida en el directorio actual) en la línea de comandos.
  
 ## 2 - Utilizar HttpClient para acceder a APIs REST
 ```csharp
@@ -94,6 +94,13 @@ code .
 dotnet build
 dotnet test
 ```
+
+Agregar solución en la raiz del src en VS o via .NET CLI
+``` 
+dotnet new sln -n "SOLUTION-NAME.sln"
+dotnet sln SOLUTION-NAME.sln add lib/PROJECT-NAME.csproj
+dotnet sln SOLUTION-NAME.sln add test/Tests.csjproj
+``` 
 
 ## 5 - Crear un paquete NuGet
 Desde Visual Studio
