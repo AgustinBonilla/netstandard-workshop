@@ -1,15 +1,15 @@
 # .NET Standard Workshop - Hands on Lab IV
 En este Lab dotaremos a nuestro proyecto de Integración Continua utilizando AppVeyor.
 
-## 1 Configuración en GitHub
+## 1 - Configuración en GitHub
 - GitHub Marketplace
 - Install AppVeyor
 - Authorize AppVeyor
 
-## 2 Configuración en NuGet
+## 2 - Configuración en NuGet
 - Crear API Key https://www.nuget.org/account/ApiKeys
 
-## 3 Configuración en AppVeyor
+## 3 - Configuración en AppVeyor
 - https://ci.appveyor.com/projects
 - Authorize GitHub
 - Add Repository
@@ -24,7 +24,7 @@ https://dot.net/v1/dotnet-install.ps1
   nuget restore src
   ``` 
 
-## 4 Versionar artefactos de CI en el repo
+## 4 - Versionar artefactos de CI en el repo
 
 Agregar Status badge en README.md
 
