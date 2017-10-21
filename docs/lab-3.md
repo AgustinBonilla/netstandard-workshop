@@ -81,3 +81,13 @@ var alert = new UIAlertView("title", result.ToString(), null, "Ok", null);
             alert.Show();
 ```
 
+#### UWP
+- Disponible para VS Update 15.4 y Windows Fall Creators Update
+ - Nuevo proyecto -> WindowsUniversal-> Blank App, crearlo dentro de la carpeta samples y nombrarlo UWPSample
+ - Agregar el paquete de NuGet 
+ - Consumir desde MainPage.xaml.cs
+ ```csharp
+ var result = ... //call to your library
+ var dialog = new MessageDialog(result.ToString());
+ dialog.ShowAsync();
+ ```
