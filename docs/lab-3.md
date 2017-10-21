@@ -61,6 +61,11 @@ dotnet run
 - Agregar el paquete de NuGet 
 - Consumir desde MainActivity.cs
 
+```csharp
+var result = ... //call to your library
+Toast.MakeText(this.ApplicationContext, result.ToString(), ToastLength.Short).Show();
+```
+
 #### iOS
 - Nuevo proyecto -> iOS-> Universal-> Blank App , crearlo dentro de la carpeta samples y nombrarlo iOSSample
 - Agregar el paquete de NuGet 
@@ -70,8 +75,18 @@ dotnet run
 Window.RootViewController = new MainViewController(); 
 ``` 
 - Consumir el paquete desde MainViewController.cs
+```csharp
+var result = ... //call to your library
+var alert = new UIAlertView("title", result.ToString(), null, "Ok", null);
+            alert.Show();
+```
 
 #### UWP
 - Nuevo proyecto -> WindowsUniversal-> Blank App, crearlo dentro de la carpeta samples y nombrarlo UWPSample
 - Agregar el paquete de NuGet 
 - Consumir desde MainPage.xaml.cs
+```csharp
+var result = ... //call to your library
+var dialog = new MessageDialog(result.ToString());
+dialog.ShowAsync();
+```
