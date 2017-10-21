@@ -24,8 +24,8 @@ https://dot.net/v1/dotnet-install.ps1
   nuget restore src
   ``` 
 
-## 4 - Versionar artefactos de CI en el repo
+## 4 - Versionar elementos de CI en el repo
 
-Agregar Status badge en README.md
+Agregar Status Badge en README.md
 
-Exporar y agregar appveyor.yml al repo
+Expotar y agregar appveyor.yml al repo

@@ -27,7 +27,8 @@ Si estan utilizando Visual Studio Code, agregar al final de .gitignore
 
 ## 2 - Agregar archivos, protegerlos y sincronizarlos
 
-- Agregar un archivo README.md para escribir una descripción del proyecto utilizando [Markdown](https://guides.github.com/features/mastering-markdown/) 
+- Agregar un archivo README.md para escribir una descripción del proyecto utilizando [Markdown](https://guides.github.com/features/mastering-markdown/ 
+
 - Agregar una carpeta "lib" y una carpeta "test"
 - Informar al repo de las adiciones
 ``` git add .```
@@ -35,6 +36,12 @@ Si estan utilizando Visual Studio Code, agregar al final de .gitignore
 ``` git commit -m "comentario" ```
 - Publicar cambios
 ``` git push ```
+
+Si es necesario configurar la cuenta de usuario desde el git cmd
+```
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
 
 ## 3 - Realizar requests hacia las APIs
 - Si tienen instalado Postman importar [Colección APIs en Postman](docs/resources/NETStandard.postman_collection.json)  

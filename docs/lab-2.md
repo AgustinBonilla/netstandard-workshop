@@ -2,7 +2,7 @@
 En este Lab utilizaremos el nuevo repo creado en el Lab I para hostear un proyecto de biblioteca .NET Standard 
 que implemente un cliente tipado para la API que cada coder elija.
 
-## 1 - Crear un proyecto .NET Standard
+## 1 - Crear un proyecto .NET Standard en la carpeta lib
 Desde Visual Studio
 - Nuevo proyecto -> Biblioteca de Clases (.NET Standard)
 ``` 
@@ -75,7 +75,7 @@ Deserializar utilizando JsonConvert
 var json = await response.Content.ReadAsStringAsync();
 var obj = JsonConvert.DeserializeObject<MyEntity>(json);
 ```
-## 4 - Agregar un proyecto de test
+## 4 - Agregar un proyecto de prueba en la carpeta test
 Moverse a la carpeta test y agregar un proyecto de MSTest
 
 Desde Visual Studio
