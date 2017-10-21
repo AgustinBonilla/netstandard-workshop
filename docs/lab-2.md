@@ -112,8 +112,21 @@ dotnet test
 dotnet sln SOLUTION-NAME.sln add lib/PROJECT-NAME.csproj
 dotnet sln SOLUTION-NAME.sln add test/Tests.csjproj
 ``` 
+## 5 - Versionar cambios
+### Desde Visual Studio
+- Desde el TeamExplorer, con la extensión para GitHub, realizar el login con su cuenta de usuario
+- Seleccionar solapa Changes
+- Ingresar comentario y luego seleccionar Commit All and Push
 
-## 5 - Crear un paquete NuGet
+Build Release desde VS
+- Configuration Manager (Release)
+
+### Desde .NET CLI
+```
+dotnet pack -c release
+```
+
+## 6 - Crear un paquete NuGet
 ### Desde Visual Studio
 - VS lo puede hacer automáticamente en el build
 - Podemos configurar la metadata desde las propiedades del proyecto
@@ -134,6 +147,6 @@ dotnet pack -c release
 - Agregar contenido /lib/netstanard2.0
 - Save
 
-## 6 - Publicar un paquete a nuget.org
+## 7 - Publicar un paquete a nuget.org
 - Crear una cuenta de usuario en [NuGet](https://nuget.org)
 - Realizar el upload del paquete
