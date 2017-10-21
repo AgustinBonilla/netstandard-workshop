@@ -7,14 +7,13 @@ Crear una carpeta samples en la raiz de su repo GitHub, agregar proyectos con cÃ
 
 ### Desde Visual Studio
 - Nuevo proyecto -> AplicaciÃ³n de Consola (.NET Core), ubicarlo dentro de samples
-- Confirmar cambios
-- Sincronizar
+- Commit All and Push
 
 ### Desde .NET CLI y Visual Studio Code
 
 ``` 
-mkdir consolesample
-cd consolesample
+mkdir CoreConsoleSample
+cd CoreConsoleSample
 dotnet new console
 dotnet add package yourpackage
 dotnet restore
@@ -46,9 +45,33 @@ sudo apt-get update
 
 sudo apt-get install dotnet-sdk-2.0.0
 ``` 
+Luego de instalado el dotnetskd, compilar y correr app de consola desde el path de nuestro repo clonado
+
+``` 
+dotnet build
+dotnet run
+``` 
 
 ## 3 - Android, iOS y UWP
 
 ### Desde Visual Studio
-- Nuevo proyecto -> Cross Platform App (Xamarin)
 
+#### Android
+- Nuevo proyecto -> Android-> Blank App, crearlo dentro de la carpeta samples y nombrarlo AndroidSample
+- Agregar el paquete de NuGet 
+- Consumir desde MainActivity.cs
+
+#### iOS
+- Nuevo proyecto -> iOS-> Universal-> Blank App , crearlo dentro de la carpeta samples y nombrarlo iOSSample
+- Agregar el paquete de NuGet 
+- Agregar un ViewController y nombrarlo MainViewController.cs
+- Establecer desde AppDelegate el root 
+```csharp
+Window.RootViewController = new MainViewController(); 
+``` 
+- Consumir el paquete desde MainViewController.cs
+
+#### UWP
+- Nuevo proyecto -> WindowsUniversal-> Blank App, crearlo dentro de la carpeta samples y nombrarlo UWPSample
+- Agregar el paquete de NuGet 
+- Consumir desde MainPage.xaml.cs
