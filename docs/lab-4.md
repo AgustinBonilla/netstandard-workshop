@@ -16,14 +16,28 @@ En este Lab dotaremos a nuestro proyecto de Integración Continua utilizando App
 - Add Deployment
 
 - Environment Config change Build Worker image to Visual Studio 2017 
-- Build Config add Before Build Script
-
-  ``` 
-  nuget restore src
-  ``` 
+- Build Config add Install Script & Before Build Script
 
 ## 4 - Versionar elementos de CI en el repo
 
-Agregar Status Badge en README.md
-
 Exportar y agregar appveyor.yml al repo
+
+```yml
+version: 1.0.{build}
+image: Visual Studio 2017
+configuration: Release
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+install:
+- cmd: appveyor downloadfile https://dist.nuget.org/win-x86-commandline/v4.3.0/nuget.exe
+before_build:
+- cmd: nuget restore src
+build:
+  publish_nuget: true
+  publish_nuget_symbols: true
+  verbosity: minimal
+``` 
+Agregar Status Badge en README.md
