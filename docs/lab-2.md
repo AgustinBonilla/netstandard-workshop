@@ -4,22 +4,31 @@ que implemente un cliente tipado para la API que cada coder elija.
 
 ## 1 - Crear un proyecto .NET Standard library
 ### Desde Visual Studio
+- Nuevo proyecto -> Otros tipos de proyecto - Solución en Blanco. Nombrarla "src" (ya que VS creará la carpeta "src", luego renombrarla con un nombre correspondiente)
 - Nuevo proyecto -> Biblioteca de Clases (.NET Standard)
 - Crearlo dentro de /src y nombrar al proyecto "lib"
+
+Instalar newtonsoft.json desde NuGet
+- Desde el solution explorer, seleccionar el proyecto y luego Administrar paquetes de NuGet...
+- Desde la consola del administrador de paquetes
 ``` 
 install-package newtonsoft.json
 ``` 
 
 ### Desde .NET CLI y Visual Studio Code
-- Posicionar el CLI en la carpeta /src
+- Posicionar el CLI en la raiz del repo
 
 ``` 
+mkdir src
+cd src
+dotnet new sln -n "SOLUTION-NAME.sln"
 mkdir lib
 cd lib
 dotnet new classlib 
 dotnet add package newtonsoft.json
 dotnet restore
 code .
+dotnet build
 ```
 
 Renombrar .csproj, namespace y class para ajustarlo al proyecto (por default toma el nombre de la carpeta). También pueden utilizar el parámetro -n "name"  -o . (y nombre y salida en el directorio actual) en el CLI.
@@ -84,7 +93,6 @@ var obj = JsonConvert.DeserializeObject<MyEntity>(json);
 - Nuevo proyecto -> Proyecto de Prueba Unitaria (.NET Core)
 - Crearlo en la carpeta /src y nombrarlo "test"
 - Agregar referencia al proyecto en ../lib
-- Guardar solución en la raiz del src en VS
 
 ### Desde .NET CLI y Visual Studio Code
 - Posicionar el CLI en la carpeta /src
@@ -101,7 +109,6 @@ dotnet test
 
 - Ejecutar posicionados desde /src
 ``` 
-dotnet new sln -n "SOLUTION-NAME.sln"
 dotnet sln SOLUTION-NAME.sln add lib/PROJECT-NAME.csproj
 dotnet sln SOLUTION-NAME.sln add test/Tests.csjproj
 ``` 

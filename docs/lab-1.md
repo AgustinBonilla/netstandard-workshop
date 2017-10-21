@@ -29,7 +29,6 @@ Si estan utilizando Visual Studio Code, agregar al final de .gitignore
 
 - Agregar un archivo README.md para escribir una descripción del proyecto utilizando [Markdown](https://guides.github.com/features/mastering-markdown/) 
 
-- Agregar una carpeta "src"
 - Informar al repo de las adiciones
 ``` git add .```
 - Confirmar cambios
@@ -37,7 +36,7 @@ Si estan utilizando Visual Studio Code, agregar al final de .gitignore
 - Publicar cambios
 ``` git push ```
 
-Si es necesario configurar la cuenta de usuario desde el git cmd
+Si es necesario, configurar la cuenta de usuario desde el git cmd
 ```
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
