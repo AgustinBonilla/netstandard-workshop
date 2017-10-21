@@ -11,7 +11,6 @@ install-package newtonsoft.json
 ``` 
 
 Utilizando .NET CLI y Visual Studio Code
-- Instalar extensión C# para VS Code
 - Posicionar el CLI en la carpeta /src
 
 ``` 
@@ -87,7 +86,6 @@ Desde Visual Studio
 - Agregar referencia al proyecto en ../lib
 
 Utilizando .NET CLI y Visual Studio Code
-- Instalar extensión C# para VS Code
 - Posicionar el CLI en la carpeta /src
 ```
 mkdir test 
