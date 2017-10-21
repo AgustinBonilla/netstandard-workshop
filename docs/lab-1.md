@@ -45,3 +45,4 @@ git config --global user.name "Your Name"
 ## 3 - Realizar requests hacia las APIs
 - Si tienen instalado Postman importar [Colección APIs en Postman](docs/resources/NETStandard.postman_collection.json)  
 - Realizar requests desde Postman para probarlas
+- Para las APIs hosteadas en [Mashape Market](https://market.mashape.com/) pueden hacer login y generar una API key asociando su cuenta de GitHub
