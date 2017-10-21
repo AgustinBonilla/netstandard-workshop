@@ -27,7 +27,7 @@ Si estan utilizando Visual Studio Code, agregar al final de .gitignore
 
 ## 2 - Agregar archivos, protegerlos y sincronizarlos
 
-- Agregar un archivo README.md para escribir una descripción del proyecto utilizando [Markdown](https://guides.github.com/features/mastering-markdown/ 
+- Agregar un archivo README.md para escribir una descripción del proyecto utilizando [Markdown](https://guides.github.com/features/mastering-markdown/) 
 
 - Agregar una carpeta "src", y dentro una "lib" y una "test"
 - Informar al repo de las adiciones
