@@ -28,4 +28,4 @@ https://dot.net/v1/dotnet-install.ps1
 
 Agregar Status Badge en README.md
 
-Expotar y agregar appveyor.yml al repo
+Exportar y agregar appveyor.yml al repo
