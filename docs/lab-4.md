@@ -15,8 +15,6 @@ En este Lab dotaremos a nuestro proyecto de Integración Continua utilizando App
 - Add Repository
 - Add Deployment
 
-https://dot.net/v1/dotnet-install.ps1 
-
 - Environment Config change Build Worker image to Visual Studio 2017 
 - Build Config add Before Build Script
 
