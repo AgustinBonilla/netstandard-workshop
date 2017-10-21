@@ -3,14 +3,14 @@ En este Lab utilizaremos el nuevo repo creado en el Lab I para hostear un proyec
 que implemente un cliente tipado para la API que cada coder elija.
 
 ## 1 - Crear un proyecto .NET Standard library
-Desde Visual Studio
+### Desde Visual Studio
 - Nuevo proyecto -> Biblioteca de Clases (.NET Standard)
 - Crearlo dentro de /src y nombrar al proyecto "lib"
 ``` 
 install-package newtonsoft.json
 ``` 
 
-Utilizando .NET CLI y Visual Studio Code
+### Desde .NET CLI y Visual Studio Code
 - Posicionar el CLI en la carpeta /src
 
 ``` 
@@ -80,12 +80,13 @@ var obj = JsonConvert.DeserializeObject<MyEntity>(json);
 ```
 ## 4 - Agregar un proyecto de prueba 
 
-Desde Visual Studio
+### Desde Visual Studio
 - Nuevo proyecto -> Proyecto de Prueba Unitaria (.NET Core)
 - Crearlo en la carpeta /src y nombrarlo "test"
 - Agregar referencia al proyecto en ../lib
+- Guardar solución en la raiz del src en VS
 
-Utilizando .NET CLI y Visual Studio Code
+### Desde .NET CLI y Visual Studio Code
 - Posicionar el CLI en la carpeta /src
 ```
 mkdir test 
@@ -98,7 +99,7 @@ dotnet build
 dotnet test
 ```
 
-Guardar solución en la raiz del src en VS, o via .NET CLI ejecutar posicionados desde /src
+- Ejecutar posicionados desde /src
 ``` 
 dotnet new sln -n "SOLUTION-NAME.sln"
 dotnet sln SOLUTION-NAME.sln add lib/PROJECT-NAME.csproj
@@ -106,27 +107,25 @@ dotnet sln SOLUTION-NAME.sln add test/Tests.csjproj
 ``` 
 
 ## 5 - Crear un paquete NuGet
-Desde Visual Studio
+### Desde Visual Studio
 - VS lo puede hacer automáticamente en el build
 - Podemos configurar la metadata desde las propiedades del proyecto
 
 Build Release desde VS
 - Configuration Manager (Release)
 
-Desde .NET CLI
+### Desde .NET CLI
 ```
 dotnet pack -c release
 ```
 
-Utilizando NuGet Package Explorer
+### Desde NuGet Package Explorer
 - Crear nuevo paquete
 - Editar metadatos
 - Agregar dependencias para el grupo netstandard2.0
 - Agregar dependencia a NETStandard.Library y Newtonsoft.Json
 - Agregar contenido /lib/netstanard2.0
 - Save
-
-
 
 ## 6 - Publicar un paquete a nuget.org
 - Crear una cuenta de usuario en [NuGet](https://nuget.org)

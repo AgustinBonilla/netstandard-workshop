@@ -1,19 +1,20 @@
 # .NET Standard Workshop - Hands on Lab III
 En este Lab crearemos proyectos en distintas plataformas .NET para implementar nuestros paquetes .NET Standard.
 
-## 1 - NET Core Console App & ASP.NET Core MVC
+## 1 - NET Core Console App 
 
-Crear una carpeta Samples en su repo GitHub
+Crear una carpeta samples en la raiz de su repo GitHub, agregar proyectos con código que muestre el uso de su librería .NET Standard
 
-Desde Visual Studio
-- Nuevo proyecto -> Aplicación de Consola (.NET Core)
-- Nuevo proyecto -> Aplicacion web ASP.NET Core
+### Desde Visual Studio
+- Nuevo proyecto -> Aplicación de Consola (.NET Core), ubicarlo dentro de samples
 - Confirmar cambios
 - Sincronizar
 
-Utilizando .NET CLI y Visual Studio Code
+### Desde .NET CLI y Visual Studio Code
 
 ``` 
+mkdir consolesample
+cd consolesample
 dotnet new console
 dotnet add package yourpackage
 dotnet restore
@@ -21,7 +22,7 @@ code .
 dotnet build
 dotnet run
 git add .
-git commit -m "first commit"
+git commit -m "sample commit"
 git push
 ```
 
@@ -48,6 +49,6 @@ sudo apt-get install dotnet-sdk-2.0.0
 
 ## 3 - Android, iOS y UWP
 
-Desde Visual Studio
+### Desde Visual Studio
 - Nuevo proyecto -> Cross Platform App (Xamarin)
 
