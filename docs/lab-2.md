@@ -118,12 +118,12 @@ dotnet sln SOLUTION-NAME.sln add test/Tests.csjproj
 - Seleccionar solapa Changes
 - Ingresar comentario y luego seleccionar Commit All and Push
 
-Build Release desde VS
-- Configuration Manager (Release)
-
 ### Desde .NET CLI
+- posicionarse en /src
 ```
-dotnet pack -c release
+git add .
+git commit -m "agregado de lib y test"
+git push
 ```
 
 ## 6 - Crear un paquete NuGet
