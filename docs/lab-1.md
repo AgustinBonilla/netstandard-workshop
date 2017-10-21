@@ -29,7 +29,7 @@ Si estan utilizando Visual Studio Code, agregar al final de .gitignore
 
 - Agregar un archivo README.md para escribir una descripción del proyecto utilizando [Markdown](https://guides.github.com/features/mastering-markdown/) 
 
-- Agregar una carpeta "src", y dentro una "lib" y una "test"
+- Agregar una carpeta "src"
 - Informar al repo de las adiciones
 ``` git add .```
 - Confirmar cambios

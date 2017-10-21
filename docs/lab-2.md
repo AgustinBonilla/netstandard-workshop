@@ -2,24 +2,28 @@
 En este Lab utilizaremos el nuevo repo creado en el Lab I para hostear un proyecto de biblioteca .NET Standard 
 que implemente un cliente tipado para la API que cada coder elija.
 
-## 1 - Crear un proyecto .NET Standard en la carpeta lib
+## 1 - Crear un proyecto .NET Standard library
 Desde Visual Studio
 - Nuevo proyecto -> Biblioteca de Clases (.NET Standard)
+- Crearlo dentro de /src y nombrar al proyecto "lib"
 ``` 
 install-package newtonsoft.json
 ``` 
 
 Utilizando .NET CLI y Visual Studio Code
 - Instalar extensión C# para VS Code
+- Posicionar el CLI en la carpeta /src
 
 ``` 
+mkdir lib
+cd lib
 dotnet new classlib 
 dotnet add package newtonsoft.json
 dotnet restore
 code .
 ```
 
-Renombrar .csproj, namespace y class para ajustarlo al proyecto (por default toma el nombre de la carpeta). También pueden utilizar el parámetro -n "name"  -o . (y nombre y salida en el directorio actual) en la línea de comandos.
+Renombrar .csproj, namespace y class para ajustarlo al proyecto (por default toma el nombre de la carpeta). También pueden utilizar el parámetro -n "name"  -o . (y nombre y salida en el directorio actual) en el CLI.
  
 ## 2 - Utilizar HttpClient para acceder a APIs REST
 ```csharp
@@ -75,17 +79,18 @@ Deserializar utilizando JsonConvert
 var json = await response.Content.ReadAsStringAsync();
 var obj = JsonConvert.DeserializeObject<MyEntity>(json);
 ```
-## 4 - Agregar un proyecto de prueba en la carpeta test
-Moverse a la carpeta test y agregar un proyecto de MSTest
+## 4 - Agregar un proyecto de prueba 
 
 Desde Visual Studio
 - Nuevo proyecto -> Proyecto de Prueba Unitaria (.NET Core)
+- Crearlo en la carpeta /src y nombrarlo "test"
 - Agregar referencia al proyecto en ../lib
 
 Utilizando .NET CLI y Visual Studio Code
 - Instalar extensión C# para VS Code
-
-``` 
+- Posicionar el CLI en la carpeta /src
+```
+mkdir test 
 cd test
 dotnet new mstest 
 dotnet add reference ../lib/projectName.csproj
@@ -95,7 +100,7 @@ dotnet build
 dotnet test
 ```
 
-Agregar solución en la raiz del src en VS o via .NET CLI
+Guardar solución en la raiz del src en VS, o via .NET CLI ejecutar posicionados desde /src
 ``` 
 dotnet new sln -n "SOLUTION-NAME.sln"
 dotnet sln SOLUTION-NAME.sln add lib/PROJECT-NAME.csproj
